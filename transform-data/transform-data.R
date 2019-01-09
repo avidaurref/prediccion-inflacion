@@ -24,6 +24,7 @@ library(rpart)
 library(nnet)
 library(corrplot)
 library(outliers)
+library(elasticnet)
 
 ##################################################
 # Conjunto de datos para un rezago de 5 meses
@@ -52,9 +53,9 @@ param$vacf               <- 0.03
 param$pcaDescomp         <-  'N'
 param$ncomp              <-   58
 
-source("data-wrangling/scripts/baseline.R")
-source("data-wrangling/scripts/transform.R")
-write.table(datosDP, paste0("data-wrangling/BDATA",meses,".csv"),sep = ",", 
+source("transform-data/scripts/baseline.R")
+source("transform-data/scripts/transform.R")
+write.table(datosDP, paste0("transform-data/BDATA",meses,".csv"),sep = ",", 
             row.names=FALSE, qmethod = "double",na = "")
 rm(list=ls())
 
@@ -86,9 +87,9 @@ param$vacf               <- 0.15
 param$pcaDescomp         <-  'N'
 param$ncomp              <-   58
 
-source("data-wrangling/scripts/baseline.R")
-source("data-wrangling/scripts/transform.R")
-write.table(datosDP, paste0("data-wrangling/BDATA",meses,".csv"),sep = ",", 
+source("transform-data/scripts/baseline.R")
+source("transform-data/scripts/transform.R")
+write.table(datosDP, paste0("transform-data/BDATA",meses,".csv"),sep = ",", 
             row.names=FALSE, qmethod = "double",na = "")
 rm(list=ls())
 
@@ -119,8 +120,8 @@ param$vacf               <- 0.18
 param$pcaDescomp         <-  'N'
 param$ncomp              <-   58
 
-source("data-wrangling/scripts/baseline.R")
-source("data-wrangling/scripts/transform.R")
-write.table(datosDP, paste0("data-wrangling/BDATA",meses,".csv"),sep = ",", 
+source("transform-data/scripts/baseline.R")
+source("transform-data/scripts/transform.R")
+write.table(datosDP, paste0("transform-data/BDATA",meses,".csv"),sep = ",", 
             row.names=FALSE, qmethod = "double",na = "")
 rm(list=ls())
