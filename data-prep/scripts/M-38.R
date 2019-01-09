@@ -1,7 +1,7 @@
 library(openxlsx)
 
 # Setting variable
-cod        <- "INFL01"
+cod        <- "INFL"
 stardate   <- "2008/4/1"
 informecsv <- "M-38.csv"
 informexls <- "M-38 IPC Base 2007.xlsx"

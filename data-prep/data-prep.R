@@ -51,5 +51,5 @@ for (i in ch) {
 # Guardar dataset
 ##########################################
 
-write.table(informe_base, "info-economia-bolivia.csv",sep = ",", 
+write.table(informe_base, "data-prep/info-economia-bolivia.csv",sep = ",", 
             row.names=FALSE, qmethod = "double",na = "")
