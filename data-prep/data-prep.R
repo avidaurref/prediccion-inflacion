@@ -1,8 +1,13 @@
-# Call libraries
-library(openxlsx)
+###################################################
+# Configurando directorio de trabajo
+##################################################
 
-# Configurar el directorio del proyecto
 setwd("C:/Users/Alvaro/Proyectos/prediccion-inflacion/")
+
+##################################################
+# Librerías requeridas
+##################################################
+library(openxlsx)
 
 ########################
 # Limpiar los informes
