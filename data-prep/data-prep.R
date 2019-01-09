@@ -48,8 +48,19 @@ for (i in ch) {
 }
 
 ##########################################
+# Obtener inflacion
+##########################################
+
+inflacion	<- informe_base[,c("MES","INFL01")]
+inflacion   <- inflacion[!is.na(inflacion$INFL01),]
+
+##########################################
 # Guardar dataset
 ##########################################
 
 write.table(informe_base, "data-prep/info-economia-bolivia.csv",sep = ",", 
             row.names=FALSE, qmethod = "double",na = "")
+write.table(inflacion, "data-prep/inflacion.csv",sep = ",", 
+            row.names=FALSE, qmethod = "double",na = "")
+
+			
